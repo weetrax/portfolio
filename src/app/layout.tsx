@@ -1,6 +1,6 @@
-import Link from "next/link";
-import "./globals.css";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,12 +21,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-const Navbar: React.FC = () => {
-  return (
-    <nav>
-      <Link href={"/"}>Home</Link>
-      <Link href={"/projects"}>Projects</Link>
-    </nav>
-  );
-};
